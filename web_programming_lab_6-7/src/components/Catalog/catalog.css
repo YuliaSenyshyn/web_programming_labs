@@ -1,0 +1,101 @@
+.books-container {
+    padding: 20px;
+  }
+  
+  .books-title {
+    text-align: center;
+  }
+  
+  .books-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+  }
+  
+  .book {
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .book-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .view-more-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .view-more {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    width: 300px; /* Adjust width as needed */
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #c2c2c2;
+    transition: border-color 0.3s ease;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: #4B5D68; /* Focus color */
+  }
+  
+  .sort-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #4B5D68; /* Button background color */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sort-button:hover {
+    background-color: #3a4b57; /* Darker color on hover */
+  }
+  
+  .sort-button:active {
+    background-color: #2a3b45; /* Active color for button */
+  }
+  
+  .sort-select {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #4B5D68;
+    background-color: #e6f1f3;
+    border: 1px solid #c2c2c2;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+  }
+  
+  .sort-select:focus {
+    outline: none;
+    border-color: #4B5D68;
+  }
+  
+  .sort-select:hover {
+    background-color: #d5e6ea;
+  }
+  
