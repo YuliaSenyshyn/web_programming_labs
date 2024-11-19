@@ -1,0 +1,25 @@
+body{
+    font-family: Arial, Helvetica;
+}
+
+a{
+    color:#4B5D68;
+    text-decoration: none;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+    
+
+h1{
+    font-family:Arial;
+}
+h3{
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 400;
+}
+p{
+    font-family: Helvetica;
+}
