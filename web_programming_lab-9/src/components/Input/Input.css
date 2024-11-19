@@ -1,0 +1,62 @@
+/* Основні стилі для інпутів */
+input {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  /* Стиль для текстових полів пошуку */
+  .catalog-search {
+    background-color: #f9f9f9;
+    color: #333;
+    transition: border 0.3s ease;
+  }
+  
+  .catalog-search:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Стиль для числових полів ціни */
+  .catalog-price-input {
+    background-color: #fff;
+    color: #333;
+    text-align: right;
+    transition: border 0.3s ease;
+  }
+  
+  .catalog-price-input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Стили для контейнера, щоб інпути не мали великих відступів */
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Додаткові стилі для заборони введення */
+  input[disabled] {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+  }
+  
+  /* Стиль для великих екранів */
+  @media (min-width: 768px) {
+    input {
+      font-size: 16px;
+    }
+  }
+  
+  /* Стиль для маленьких екранів */
+  @media (max-width: 480px) {
+    input {
+      font-size: 14px;
+    }
+  }
+  

@@ -1,0 +1,14 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background-color: hsl(0, 0%, 100%);
+  color: #333;
+}
+
+h2 {
+  color: #4B5D68;
+}
+
+button {
+  cursor: pointer;
+}
