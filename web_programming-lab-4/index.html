@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Manager</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">Books</h1>
+        <div class="search-box">
+            <label for="" class="search-title">Enter book title</label>
+            <input type="text" class="search-input" id="search-input">
+            <button type="button" class="search-btn" id="search-btn">Search</button>
+            <button type="button" class="cancel-search-btn" id="cancel-search-btn">Cancel</button>
+        </div>
+        <div class="items-box">
+            <div class="utils">
+                <h2 class="util-title">Manage Books</h2>
+                <button type="button" class="sort-btn" id="sort-btn">Sort by price</button>
+                <button type="button" class="add-card" id="add-btn">Add Book</button> <!-- Add this button -->
+                <p class="counter-title">Count total price of all books</p>
+                <button type="button" class="count-btn" id="count-btn">COUNT</button>
+                <div class="count-box">
+                    <p class="count-result">Total price:</p>
+                    <p class="result">0</p>
+                </div>
+            </div>
+            <div class="books-wrapper">
+                <ul id="books-list" class="books-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Book Modal -->
+<div class="modal js-add">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Add Book</h2>
+        <form class="js-add-form">
+            <input type="text" class="book-name-input" placeholder="Book Title" required>
+            <input type="text" class="author-input" placeholder="Author" required>
+            <input type="number" class="pages-input" placeholder="Number of Pages" required>
+            <input type="number" class="price-input" placeholder="Price (UAH)" required>
+            <button type="submit" class="add-btn">Add Book</button>
+        </form>
+    </div>
+</div>
+
+<!-- Edit Book Modal -->
+<div class="modal js-edit">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Edit Book</h2>
+        <form class="js-edit-form">
+            <input type="text" class="book-name-input" placeholder="Book Title" required>
+            <input type="text" class="author-input" placeholder="Author" required>
+            <input type="number" class="pages-input" placeholder="Number of Pages" required>
+            <input type="number" class="price-input" placeholder="Price (UAH)" required>
+            <button type="submit">Save Changes</button>
+        </form>
+    </div>
+</div>
+
+
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>
+
+
