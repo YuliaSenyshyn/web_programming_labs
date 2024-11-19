@@ -1,0 +1,101 @@
+/* Books.css */
+
+.books-container {
+    padding: 20px;
+}
+
+.books-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+.books-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+}
+
+.book {
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    padding: 10px; 
+    text-align: center; 
+    transition: transform 0.2s; 
+}
+
+.book:hover {
+    transform: scale(1.05); 
+}
+
+.book-image img {
+    width: 80%; 
+    height: auto; 
+}
+
+.book h3 {
+    font-size: 18px; 
+}
+
+.book p {
+    font-size: 14px; 
+}
+.view-more-container {
+    text-align: center; 
+    margin-top: 20px;
+}
+
+.hide, .view-more {
+    padding: 10px 20px; 
+    font-size: 16px;
+    cursor: pointer; 
+    background-color: #002954; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+}
+
+.hide:hover, .view-more:hover {
+    background-color: #0056b3; 
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    width: 300px; 
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #c2c2c2;
+    transition: border-color 0.3s ease;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: #4B5D68; 
+  }
+  
+  .sort-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #002954; 
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sort-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .sort-button:active {
+    background-color: #002954; 
+  }

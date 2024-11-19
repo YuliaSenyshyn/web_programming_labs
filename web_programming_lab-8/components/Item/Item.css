@@ -1,0 +1,142 @@
+html, body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.item-container {
+    display: flex;
+    align-items: flex-start; /* Aligns items to the start of the container */
+    width: 100%; /* Use full width of the parent container */
+    max-width: 1200px; /* Limit max width for better readability */
+    margin: 20px auto; /* Center the container */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    gap: 70px;
+}
+
+.item-image {
+    flex: 1; /* Takes up available space */
+    margin-right: 30px; /* Increased margin for more space between image and text */
+}
+
+.item-image img {
+    width: 100%; /* Use full width of the image container */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.item-details {
+    flex: 2; /* Takes up more space compared to the image */
+    text-align: left; /* Align text to the left */
+    padding-left: 20px; /* Add padding to move text to the right */
+}
+
+.item-details h2 {
+    font-size: 28px; /* Increased font size for the title */
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.item-details p {
+    font-size: 18px; /* Increased font size for the description */
+    color: #666;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+    margin-right: 10px;
+}
+
+.quantity-input {
+    width: 60px; /* Slightly wider for better usability */
+    padding: 8px; /* Increased padding for comfort */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 10px 0; /* Added vertical margin for spacing */
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column; /* Arrange buttons in a column */
+    margin-top: 15px; /* Add space above the buttons */
+}
+
+.add-to-cart-button,
+.go-back-button {
+    display: inline-block;
+    padding: 10px 12px; /* Reduced width of buttons */
+    margin-bottom: 10px; /* Space between buttons */
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px; /* Increased font size for better readability */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Add transform effect */
+    text-align: center; /* Center text in buttons */
+    max-width: 200px;
+}
+
+.add-to-cart-button {
+    background-color: #28a745; /* Green for "Add to Cart" */
+}
+
+.add-to-cart-button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.go-back-button {
+    background-color: #007bff; /* Blue for "Go Back" */
+}
+
+.go-back-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.total-price {
+    font-size: 1.4em; /* Make the total price stand out */
+    font-weight: bold; /* Make the text bold for emphasis */
+    margin: 15px 0; /* Add spacing */ /* Light background color for better visibility */
+    padding: 10px; /* Add padding for better readability */
+    border-radius: 4px; /* Slight rounding of corners */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .item-container {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        align-items: center; /* Center items */
+        padding: 15px; /* Adjust padding for smaller screens */
+        width: 100%; /* Ensure full width on smaller screens */
+    }
+
+    .item-image {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add bottom margin for spacing */
+    }
+
+    .item-details {
+        text-align: center; /* Center text on smaller screens */
+        padding-left: 0; /* Remove padding for smaller screens */
+    }
+
+    .quantity-input {
+        width: 50px; /* Adjust input width for small screens */
+    }
+
+    .item-details h2 {
+        font-size: 24px; /* Adjust title font size for small screens */
+    }
+
+    .item-details p {
+        font-size: 16px; /* Adjust description font size for small screens */
+    }
+}
