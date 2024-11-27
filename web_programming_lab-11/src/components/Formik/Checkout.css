@@ -1,0 +1,103 @@
+/* Загальні стилі для контейнера */
+.checkout-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .checkout-container h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Стилі для форми */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus {
+    border-color: #5c6bc0;
+    outline: none;
+  }
+  
+  .error {
+    font-size: 14px;
+    color: #d32f2f;
+    margin-top: 5px;
+  }
+  
+  /* Стилі для кнопки з класом */
+  .checkout-submit-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #5c6bc0;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+  }
+  
+  .checkout-submit-btn:hover {
+    background-color: #3f4b8f;
+  }
+  
+  .checkout-submit-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Стилі для мобільних пристроїв */
+  @media (max-width: 768px) {
+    .checkout-container {
+      padding: 15px;
+    }
+  
+    .form-group {
+      flex-direction: column;
+    }
+  
+    label {
+      font-size: 14px;
+    }
+  
+    input[type="text"],
+    input[type="email"] {
+      font-size: 14px;
+    }
+  
+    .checkout-submit-btn {
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+  }
+  

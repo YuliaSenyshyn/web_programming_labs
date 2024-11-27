@@ -24,7 +24,7 @@ const App = () => {
         <Route path="/catalog" element={<Catalog visibleBooks={visibleBooks} handleViewMore={handleViewMore} />} />
         <Route path="/item/:id" element={<Item items={initialBooksData} />} />
       </Routes>
-      <Footer /> {/* Include Footer here */}
+      <Footer /> 
     </Router>
   );
 };

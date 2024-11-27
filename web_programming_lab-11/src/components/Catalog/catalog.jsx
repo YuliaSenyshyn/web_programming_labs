@@ -86,6 +86,7 @@ const Catalog = () => {
         <button onClick={handleClearFilters} className="clear-filters-btn">Скинути фільтри</button>
       </div>
 
+      {/* Лоадер відображається під час завантаження */}
       {loading ? (
         <Loader />
       ) : (

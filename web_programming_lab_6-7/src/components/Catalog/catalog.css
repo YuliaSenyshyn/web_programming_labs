@@ -47,7 +47,7 @@
   }
   
   .search-input {
-    width: 300px; /* Adjust width as needed */
+    width: 300px;
     padding: 12px;
     font-size: 16px;
     border-radius: 8px;
@@ -57,14 +57,14 @@
   
   .search-input:focus {
     outline: none;
-    border-color: #4B5D68; /* Focus color */
+    border-color: #4B5D68;
   }
   
   .sort-button {
     padding: 10px 20px;
     font-size: 16px;
     color: #ffffff;
-    background-color: #4B5D68; /* Button background color */
+    background-color: #4B5D68; 
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -72,11 +72,11 @@
   }
   
   .sort-button:hover {
-    background-color: #3a4b57; /* Darker color on hover */
+    background-color: #3a4b57; 
   }
   
   .sort-button:active {
-    background-color: #2a3b45; /* Active color for button */
+    background-color: #2a3b45; 
   }
   
   .sort-select {

@@ -1,0 +1,46 @@
+/* Загальні стилі для контейнера */
+.success-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Робимо сторінку повноекранною */
+    background-color: #f9f9f9; /* Світлий фон */
+    color: #333; /* Основний текст темного кольору */
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; /* Вирівнювання тексту */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Стилі для заголовка */
+  .success-container h2 {
+    font-size: 2.5rem; /* Розмір заголовка */
+    margin-bottom: 20px;
+    color: #28a745; /* Зелений колір для успіху */
+  }
+  
+  /* Стилі для тексту */
+  .success-container p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Стилі для посилання */
+  .success-container a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff; /* Білий текст */
+    background-color: #002954; /* Синій фон */
+    border: none;
+    border-radius: 5px; /* Округлені кути */
+    text-decoration: none; /* Забираємо підкреслення */
+    transition: background-color 0.3s ease; /* Плавна зміна кольору */
+  }
+  
+  /* Ефект ховера на посилання */
+  .success-container a:hover {
+    background-color: #0056b3; /* Темніший синій */
+  }
+  

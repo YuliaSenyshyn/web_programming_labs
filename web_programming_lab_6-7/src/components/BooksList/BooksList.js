@@ -43,7 +43,7 @@ const Books = () => {
           </div>
         ))}
       </div>
-      {visibleBooks < booksData.length && ( // Перевірити, чи є більше книжок
+      {visibleBooks < booksData.length && ( 
         <div className="view-more-container">
           <button className="view-more" onClick={handleViewMore}>
             Переглянути більше
